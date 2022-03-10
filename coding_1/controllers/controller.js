@@ -7,7 +7,8 @@ class Controller {
     temp.split("").forEach((el) => {
       result += el * 2 ** --count;
     });
-    return temp;
+    // return temp;
+    res.status(200).json(result);
   }
 }
 
